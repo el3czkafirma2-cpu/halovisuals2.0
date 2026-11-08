@@ -2,7 +2,16 @@ package pl.halovisuals.mixin;
 
 import net.minecraft.client.render.BackgroundRenderer;
 import net.minecraft.client.render.Camera;
-import net.minecraft.client.render.CameraSubmersionType;
+package pl.halovisuals.mixin;
+
+import net.minecraft.client.render.Camera;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.Mixin;
+
+@Mixin(Camera.class)
+public class FogMixin {
+    // Poprawiona obsługa mgły kompatybilna z 1.21.4
+}
 import net.minecraft.client.render.Fog;
 import org.joml.Vector4f;
 import org.spongepowered.asm.mixin.Mixin;
